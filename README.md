@@ -1,3 +1,3 @@
 # Simple-Stopwatch
-## Describtion
+## Description
 This school project is codded in Assembly created on K22 MCU. I create a simple stopwatch with the ability to change the counting frequency with peripheral switches and a button to halt the watch. To achieve this, I configured and used the peripheral LPTTIMER by using "polling method". Polling involves creating a software loop to check the flags on the timer. If the flag is set, the code will increment the count. Also, the code should update the compare value for the timer to change the counting rate according to the switches data. Also, there is a state machine that would debounce the button to hold the system. This code is relatively short, so the delay of code won't affect the timing of the whole system. Using "interrupt" can further improve the system.
